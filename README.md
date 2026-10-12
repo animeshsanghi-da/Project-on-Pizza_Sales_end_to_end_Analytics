@@ -1,5 +1,18 @@
 # 🍕 Comprehensive End-to-End Pizza Sales Analytics Project
 
+[![Microsoft Excel](https://img.shields.io/badge/Microsoft_Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)](https://www.microsoft.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)](https://powerbi.microsoft.com/)
+[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=tableau&logoColor=white)](https://www.tableau.com/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+
+
+[![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org/)
+[![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white)](https://matplotlib.org/)
+[![Seaborn](https://img.shields.io/badge/SeabStr-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://seaborn.pydata.org/)
+[![OpenPyXL](https://img.shields.io/badge/OpenPyXL-217346?style=for-the-badge&logo=python&logoColor=white)](https://openpyxl.readthedocs.io/)
+
 ## Executive Summary & Project Overview
 
 This project delivers a complete, multi-platform data analytics solution for a comprehensive pizza restaurant dataset. The analytical pipeline spans raw data ingestion, advanced data cleaning in Excel (Power Query), relational database modeling and querying in MySQL, exploratory data analysis (EDA) and visualization using Python (Matplotlib & Seaborn), Excel PivotCharts, enterprise-grade dashboard development in Power BI and Tableau, and automated executive reporting via OpenPyXL.
@@ -24,11 +37,15 @@ Raw transactional data was cleaned and structured to ensure data integrity and a
 5. **Unique Orders Flag:** Added `unique_orders` column.
 6. **Export:** Saved final output as `pizza_sales_transformed_data.xlsx`.
 
+![Power Query Transformation](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/1.0_power_query.png)
+
 ### Phase 2: Database Management & SQL Analysis (MySQL & Python)
 
 - **Schema Design & Creation:** Built relational database schema (`pizza_db`) with optimized data types and constraints.
 - **Data Ingestion:** Automated loading of transformed data into MySQL via Python scripts. 
 - **Analytical Queries:** Computed total revenue, AOV, hourly/daily trends, category/size percentage contributions, and top/bottom rankings.
+
+![MySQL Query](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/2.0_SQL.png)
 
 ### Phase 3: Exploratory Data Analysis & Visualization (Excel PivotCharts)
 
@@ -40,12 +57,17 @@ Constructed structured analytical sheets and interactive PivotCharts:
 - `best_&_worst_sellers` Sheet: Top and bottom 5 sellers by volume and revenue.
 - Dashboard Sheet: Integrated executive summary view.
 
+![Excel Dashboard](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/3.0_Excel_PivotCharts.png)
+
 ### Phase 4: Advanced Business Intelligence & Dashboards (Power BI)
 
 Loaded transformed data into Power BI to build a robust semantic model with DAX measures and calculated calendar tables:
 
 - **Dashboard 1 (HOME):** KPI scorecards, daily/monthly trend visuals, category/size breakdown, and interactive slicers.
 - **Dashboard 2 (BEST & WORST SELLERS):** Horizontal bar graphs detailing top and bottom 5 sellers by revenue and quantity.
+
+![Power BI 1](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/4.1_Power_BI.png)
+![Power BI 2](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/4.2_Power_BI.png)
 
 ### Phase 5: Enterprise Analytics & Dashboarding (Tableau)
 
@@ -54,13 +76,22 @@ Built two comprehensive Tableau analytical dashboards:
 - **Pizza Sales Dashboard (HOME):** Visualized hourly/daily heatmaps, monthly trends, category shares, and size preferences.
 - **Best & Worst Sellers Dashboard:** Highlighted revenue leaders (Thai Chicken), volume champions (Classic Deluxe), and low performers (Brie Carre).
 
+![Tableau 1](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/5.1_Tableau.png)
+![Tableau 2](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/5.2_Tableau.png)
+
 ### Phase 6: Python EDA & Matplotlib/Seaborn Visualization (`.ipynb`)
 
 Utilized Jupyter Notebooks with `pandas`, `numpy`, `matplotlib`, and `seaborn` to execute programmatic data aggregations, heatmaps, and publication-quality plots. Key insights led to strategic recommendations regarding menu rationalization, combo bundling, and inventory optimization.
 
+![plt 1](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/6.1_matplotlib.png)
+![plt 2](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/6.2_matplotlib.png)
+![plt 3](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/6.3_matplotlib.png)
+
 ### Phase 7: Automated Excel Executive Report Generation (Python & OpenPyXL)
 
 Developed a custom Python automation script (`generate_pizza_report.py`) utilizing `pandas` and `openpyxl` to programmatically ingest data, apply professional formatting, inject native formulas, adjust column widths, and generate `pizza_sales_executive_report.xlsx`.
+
+![python automation](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/7.0_python_automation.png)
 
 ## 📁 Repository Structure
 
@@ -112,12 +143,14 @@ Developed a custom Python automation script (`generate_pizza_report.py`) utilizi
 
 3. **AOV Enhancement:** Strategic bundle offers and promotional cross-selling can effectively lift Average Order Value.
 
+![insights](https://raw.githubusercontent.com/animeshsanghi-da/Project-on-Pizza_Sales_end_to_end_Analytics/main/Images/dashboards/9.9_insights_recommendations.png)
+
 ## 👤 Author
 
-**Name:** Animesh Sanghi
-**Profession:** Google Certified Data Analyst
-**LinkedIn:** [linkedin.com/in/animeshsanghi-da](https://www.linkedin.com/in/animeshsanghi-da/)
-**GitHub:** [github.com/animeshsanghi-da](https://github.com/animeshsanghi-da)
+**Name:** Animesh Sanghi  
+**Profession:** Google Certified Data Analyst  
+**LinkedIn:** [linkedin.com/in/animeshsanghi-da](https://www.linkedin.com/in/animeshsanghi-da/)  
+**GitHub:** [github.com/animeshsanghi-da](https://github.com/animeshsanghi-da)  
 **Email:** animeshsanghi.da@gmail.com
 
 ## 📜 License
